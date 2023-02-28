@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>HOME PAGE</title>
+<link rel="stylesheet" type="text/css" href="../static/welcome.css">
+<body>
+<h1>IRISH REBEL</h1>
+
+<form  id = "form1"class = "grid" action="/result"  method="post">
+
+
+{% if name %}
+<h3 style="color: blueviolet"> Welcome : {{name }} to my site </h3>
+    {% endif %}
+
+
+
+<label for  ="name">Please Enter your Name</label>
+    <input type=" text" id="name" name="name">
+     <input type="submit" class = "file_submit">
+
+
+</form>
+
+
+
+</body>
+
+
+</html>
